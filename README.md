@@ -1,226 +1,192 @@
+# Ex. No. 4 – Scenario-Based Prompt Design and Evaluation for Advanced Prompt Types
 
-# **Ex.No.4 – Scenario-Based Report Development Utilizing Diverse Prompting Techniques**
-# Name:Dhayananth.P.S
-# REG NO: 212223040039
-
-### **Aim**
-
-To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
-
-**Case Study 2** will be analyzed using **Comparative Analysis Prompt, Universal Prompt Structures, Prompt Refinements, and Prompt Size Limitations.**
+**NAME:** Dhayananth.P.S  
+**REGISTER NUMBER:** 212223040039  
 
 ---
 
-### **Explanation**
+## Introduction  
+Prompt engineering is the process of designing and refining prompts to get meaningful, accurate, and context-aware responses from AI systems.  
+This experiment focuses on **advanced prompt types** that go beyond basic instruction-giving, using a **manufacturing automation scenario** as the use case.  
 
-Any one use case from **Unit 5** is chosen, and the report is generated using **Unit 2 Prompt Types.**
-
----
-
-### **Procedure**
-
-1. **Understanding Chatbot Requirements**
-
-   * The chatbot must answer customer FAQs, track orders, provide product recommendations, and handle complaints politely.
-
-2. **Selection of Prompting Techniques**
-
-   * We selected a wide range of prompting techniques — including Zero-shot, Few-shot, Chain-of-Thought, Role Prompting, and others — to cover different aspects of chatbot development.
-
-3. **Prompt Design**
-
-   * For each technique, prompts were specifically designed to handle real-world customer scenarios such as order tracking, damaged item reporting, and delayed delivery.
-
-4. **Experimentation**
-
-   * Each prompting technique was applied to the same scenario to evaluate how the chatbot responded.
-
-5. **Observation and Analysis**
-
-   * The quality, tone, and accuracy of the chatbot’s responses were compared to determine which techniques produced the best customer experience.
-
-6. **Identify Prompt Patterns for Each Design Aspect**
-
-   **Idea Generation Prompts**
-
-   * Prompt: *“What features can be incorporated into the automation system to optimize production and reduce downtime?”*
-
-   **Generated Ideas:**
-
-   * Sensors for real-time monitoring of equipment performance.
-   * Predictive maintenance alerts to anticipate equipment failures.
-   * Energy usage optimization by automating switching of machines on/off based on demand.
-   * Cloud-based dashboards for remote monitoring and control of machinery.
-
-   **Persona and Context Prompts**
-
-   * Prompt: *“What should the user interface and control system convey to the operators and managers?”*
-
-   **Generated Context:**
-
-   * The user interface should be intuitive and provide real-time data on machine performance, energy usage, and alerts.
-   * The system should convey reliability and ease of use, with minimal training required for operators.
-
-   **Main Objectives:**
-
-   * Improve production efficiency by 30%.
-   * Minimize machinery downtime with predictive maintenance.
-   * Enable real-time monitoring and remote control of manufacturing systems.
-   * Reduce energy consumption by optimizing processes.
+We will explore:  
+1. Comparative Analysis Prompts  
+2. Experiential Perspective Prompts  
+3. Everyday Functioning Prompts  
+4. Universal Prompt Structures  
+5. Prompt Refinements – Prompt Size Limitations  
 
 ---
 
-### **Prompt Design and Techniques**
-
-1. **Zero-Shot Prompting**
-
-   * Prompt: *“Where is my order #12345?”*
-   * **Observation:** The chatbot responded but tone consistency varied. Sometimes the reply was generic or robotic.
-
-2. **One-Shot Prompting**
-
-   * Prompt Example:
-     *“Example: Customer asks: Where is my order #98765? → Bot: Your order is out for delivery and will arrive tomorrow. Now answer: Where is my order #12345?”*
-   * **Observation:** The chatbot’s response became more aligned with the expected format and tone.
-
-3. **Few-Shot Prompting**
-
-   * Multiple examples were given to set a clear pattern.
-   * **Observation:** Improved tone and consistency. Maintained a polite, professional style.
-
-4. **Chain-of-Thought Prompting**
-
-   * Prompt Example:
-     *“The customer says they received a damaged item. Think step by step: Apologize, Ask for details, Offer a replacement.”*
-   * **Observation:** Responses became structured, covering all steps systematically.
-
-5. **ReAct Prompting**
-
-   * Prompt Example:
-     *“Decide if a refund or replacement is more appropriate. Think first, then respond to the customer.”*
-   * **Observation:** Worked best for decision-making tasks like returns/refunds.
-
-6. **Self-Consistency Prompting**
-
-   * Generated multiple possible responses, selecting the best.
-   * **Observation:** Final response was more balanced and customer-friendly.
-
-7. **Role Prompting**
-
-   * Prompt Example:
-     *“You are a polite and empathetic customer service agent. Help the customer track their order.”*
-   * **Observation:** Natural, professional, and empathetic replies.
-
-8. **Tree-of-Thought Prompting**
-
-   * Prompt Example:
-     *“Generate three ways to resolve a delayed shipment: (1) Apologize and offer a discount, (2) Offer a replacement, (3) Give updated ETA. Choose the best option.”*
-   * **Observation:** Creative and customer-focused decision-making.
-
-9. **Reflection Prompting**
-
-   * Prompt Example:
-     *“Here’s your answer: . Make it more polite and professional.”*
-   * **Observation:** Improved wording and professionalism.
-
-10. **Multimodal Prompting**
-
-    * Example: Uploading a product image and asking: *“Is this available in blue?”*
-    * **Observation:** Effective for product-related queries but requires image database.
+## Aim  
+To write and evaluate prompts for the above prompt types using a manufacturing automation use case and compare their outputs using a chosen evaluation method (Rubrics).
 
 ---
 
-### **Scenario Application**
+## Theory  
 
-**Situation:**
-A customer reports a **damaged item** and wants a resolution.
-We apply two techniques for comparison:
+### What is Prompt Engineering?  
+Prompt Engineering is about creating effective instructions for AI models to get desired results.  
+Advanced prompting techniques help generate **comparisons, perspectives, daily life analogies, structured outputs, and size-optimized responses**.
 
----
+### Types of Prompts  
 
-#### **Technique 1: Few-Shot Prompting**
+1. **Comparative Analysis Prompt**  
+   - Compares two or more concepts, showing similarities and differences.  
+   - Example: `"Compare and contrast deep learning and machine learning."`
 
-**Prompt:**
-Classify and respond to customer complaints in a polite, solution-oriented way.
+2. **Experiential Perspective Prompt**  
+   - Generates answers from a specific perspective or persona.  
+   - Example: `"As a factory manager, describe the impact of predictive maintenance."`
 
-**Examples:**
+3. **Everyday Functioning Prompt**  
+   - Connects the topic to everyday life for better understanding.  
+   - Example: `"Explain how IoT automation is similar to a smart home system."`
 
-* Customer: *My order was late.*
-  Bot: *I'm really sorry your order was delayed. I have checked and it will reach you today. Thank you for your patience!*
+4. **Universal Prompt Structures**  
+   - Generic prompt templates that can be applied to any topic.  
+   - Example: `"Explain predictive maintenance in simple terms with an example."`
 
-* Customer: *I received the wrong item.*
-  Bot: *I apologize for the mix-up! I have initiated a replacement request. You will receive the correct item within 3-4 working days.*
-
-**New Case:**
-Customer: *I received a damaged item.*
-
-**Output:**
-Bot: *I’m very sorry to hear that your product arrived damaged. I have initiated a replacement request at no extra cost. You will receive the new item within 3-4 working days. Would you like me to arrange a pickup for the damaged product?*
-
-**Observation:**
-
-* Polite, structured, aligned with examples.
-* Maintains consistency and professional tone.
-* Anticipates customer needs without extra clarification.
+5. **Prompt Refinements – Size Limitations**  
+   - Breaks large or complex prompts into smaller, manageable parts.  
+   - Example: `"List 10 IoT devices used in manufacturing. Then provide 10 more."`
 
 ---
 
-#### **Technique 2: ReAct Prompting**
+## Scenario  
 
-**Prompt:**
-Customer: *I received a damaged item.*
+**Use Case:**  
+The manufacturing industry wants to reduce manual monitoring and improve efficiency through automation.  
+The system uses IoT devices and embedded controllers to automate equipment, monitor performance, and enable predictive maintenance.  
 
-*Reason step by step:*
+**Main Objectives:**  
+- Improve production efficiency by 30%  
+- Minimize downtime through predictive maintenance  
+- Enable real-time monitoring and remote control  
+- Optimize processes to reduce energy consumption  
 
-1. Identify complaint type (damaged product).
-2. Decide refund or replacement (replacement better for customer satisfaction).
-3. Respond politely and take action.
-
-**Reasoning:**
-
-* Complaint: Damaged item.
-* Resolution: Replacement retains sale & ensures satisfaction.
-* Action: Apologize, confirm replacement, arrange pickup.
-
-**Final Response:**
-Bot: *I’m sorry to hear your item was damaged. I have arranged a replacement for you at no cost. It will arrive within 3-4 business days. Could you confirm your address for the pickup of the damaged item?*
-
-**Observation:**
-
-* Explains reasoning before answering.
-* Provides empathetic, actionable response.
-* Balances business needs with customer care.
+**Target Audience:**  
+Manufacturing companies, especially in **automotive, electronics, and food processing sectors**.
 
 ---
 
-### **Comparative Analysis of Techniques**
+## Procedure  
 
-| Technique          | Strengths                                 | Weaknesses                            | Best Use Case                        |
-| ------------------ | ----------------------------------------- | ------------------------------------- | ------------------------------------ |
-| Few-Shot Prompting | Consistent tone, structured replies       | Limited creativity, fixed to examples | FAQs, routine queries                |
-| ReAct Prompting    | Adaptive, reasoning-based, customer-first | Slightly longer processing            | Complaints, refunds, decision-making |
+### 1. Comparative Analysis Prompt
+**Prompt:**  
+`Compare and contrast manual manufacturing monitoring with IoT-based automated monitoring.`  
 
----
+**Generated Output:**  
 
-### **Universal Prompt Structures, Refinements & Size Limitations**
-
-* **Universal Prompt Example:**
-  *“You are a polite and empathetic chatbot. A customer reports: \[issue]. Respond with empathy, suggest the best solution, and confirm next steps.”*
-
-* **Refinements:**
-
-  * Few-Shot prompts improved tone consistency.
-  * ReAct prompts enhanced reasoning and adaptability.
-
-* **Prompt Size Limitations:**
-
-  * Excessive examples → longer processing times.
-  * Concise, well-structured prompts yielded best performance.
+| Aspect                  | Manual Monitoring                         | IoT-Based Monitoring                  |
+|-----------------------|----------------------------------------|------------------------------------|
+| Data Collection       | Done manually by workers               | Automated using sensors and IoT devices |
+| Accuracy              | Prone to human error                   | Highly accurate, real-time data |
+| Response Time         | Delayed due to manual reporting        | Instant alerts and real-time dashboards |
+| Cost                  | Higher labor cost                     | Lower operational cost after setup |
+| Predictive Maintenance| Not possible or very limited           | Possible through data analytics |
 
 ---
 
-### **Result**
+### 2. Experiential Perspective Prompt
+**Prompt:**  
+`As a production supervisor, explain how predictive maintenance affects your daily work.`  
 
-* Both techniques enhanced chatbot performance compared to Zero-Shot.
-* **Few-Shot Prompting**: Best for FAQs and structured, routine queries.
-* **ReAct Prompting**: Best for complaints, refunds, or reasoning-heavy queries.
+**Generated Output:**  
+"As a supervisor, predictive maintenance helps me plan better. Instead of waiting for machines to fail, I get alerts in advance. This reduces unexpected breakdowns, avoids overtime labor costs, and allows smoother production scheduling."
+
+---
+
+### 3. Everyday Functioning Prompt
+**Prompt:**  
+`Explain predictive maintenance in manufacturing by comparing it to car servicing.`  
+
+**Generated Output:**  
+"Predictive maintenance in manufacturing is like taking your car for servicing based on sensor data rather than waiting for it to break down. Just like modern cars warn you about oil changes or engine problems, IoT devices in manufacturing notify engineers before machines fail."
+
+---
+
+### 4. Universal Prompt Structures
+**Prompt:**  
+`Explain the process of predictive maintenance step by step.`  
+
+**Generated Output:**  
+1. IoT sensors collect data from machines.  
+2. Data is sent to a central monitoring system.  
+3. AI algorithms analyze data for anomalies.  
+4. Predictions are made about possible failures.  
+5. Maintenance team is alerted for inspection.  
+6. Preventive action is taken before breakdown occurs.  
+
+---
+
+### 5. Prompt Refinements – Size Limitations
+**Prompt:**  
+`List 20 IoT devices used in manufacturing for automation and monitoring.`  
+
+**Refinement:**  
+`List 10 IoT devices first. Then give 10 more.`  
+
+**Generated Output (First 10):**  
+- Temperature sensors  
+- Vibration sensors  
+- RFID tags  
+- Smart energy meters  
+- Proximity sensors  
+- Humidity sensors  
+- Pressure sensors  
+- Smart cameras  
+- PLC controllers  
+- Automated conveyor sensors  
+
+**Generated Output (Next 10):**  
+- Ultrasonic sensors  
+- Load cells  
+- Gas detectors  
+- Flow meters  
+- Smart actuators  
+- IoT gateways  
+- Industrial robots  
+- Smart alarms  
+- Digital twins integration devices  
+- Edge computing nodes  
+
+---
+
+## Evaluation Method – Rubric  
+
+| **Criteria**        | **Excellent (5)** | **Good (4)** | **Average (3)** | **Poor (1-2)** |
+|--------------------|------------------|-------------|----------------|--------------|
+| Relevance          | All prompts highly relevant to scenario | Mostly relevant | Somewhat relevant | Not relevant |
+| Clarity            | Very clear, easy to understand | Mostly clear | Some confusion | Unclear |
+| Completeness       | Covers all required aspects | Covers most aspects | Partial coverage | Incomplete |
+| Practicality       | Real-world applicable examples | Some real examples | Few examples | No examples |
+
+**Result:** All prompts scored **Excellent (5)** on relevance, clarity, completeness, and practicality.
+
+---
+
+## Advantages  
+- Encourages **deep thinking** by comparing approaches  
+- Provides **realistic scenarios** with experiential prompts  
+- Simplifies complex concepts through **everyday analogies**  
+- Handles large requests efficiently using **prompt size refinements**  
+
+---
+
+## Applications  
+- Manufacturing automation and process design  
+- Training production staff using scenario-based prompts  
+- AI-based research and development reports  
+- Educational case studies for Industry 4.0  
+
+---
+
+## Conclusion  
+The prompts for advanced prompt types were successfully designed and evaluated using the manufacturing automation scenario.  
+Each type produced relevant, detailed, and structured responses, demonstrating their importance in generating high-quality AI outputs.
+
+---
+
+## Result  
+Thus, the prompts were executed successfully, and the scenario-based report was generated with accurate and meaningful insights.
